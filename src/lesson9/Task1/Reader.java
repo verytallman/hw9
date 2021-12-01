@@ -3,7 +3,7 @@ package lesson9.Task1;
 import java.util.Arrays;
 
 public class Reader {
-   private String FIO;
+    public String FIO;
     private String nomerChitatelskogo;
     private String Facultet;
     private String dateOfBirth;
@@ -26,7 +26,11 @@ public class Reader {
     void takeBook (String[] arr){
         System.out.println(FIO+ " взял книги: "+Arrays.toString(arr));
     }
+
     public void returnBook(String str2){
         System.out.println(str2);
     }
+
+
+
 }

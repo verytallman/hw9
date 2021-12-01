@@ -13,5 +13,9 @@ public class App {
         NewReader.takeBook(2);
         NewReader.takeBook(new String[] {"Приключения", "Словарь", "Энциклопедия"});
 
+        Book NewBook = new Book("Идиот","Федор Достоевский");
+        NewBook.FIO = NewReader.FIO;
+        NewBook.takeBook();
+
     }
 }
