@@ -18,18 +18,31 @@ public class Reader {
     }
 
     public void takeBook (String str1){
-        System.out.println(str1);
+        System.out.println("Беру книгу " + str1);
+        System.out.println("");
     }
     void takeBook(int n){
         System.out.println(FIO + " взял "+n+" книги.");
+        System.out.println("");
     }
     void takeBook (String[] arr){
         System.out.println(FIO+ " взял книги: "+Arrays.toString(arr));
+        System.out.println("");
     }
 
     public void returnBook(String str2){
-        System.out.println(str2);
+        System.out.println("Возвращаю книгу "+ str2);
+        System.out.println("");
     }
+    void returnBook(int n){
+        System.out.println(FIO + " вернул "+n+" книги.");
+        System.out.println("");
+    }
+    void returnBook (String[] arr){
+        System.out.println(FIO+ " вернул книги: "+Arrays.toString(arr));
+        System.out.println("");
+    }
+
 
 
 
