@@ -3,7 +3,7 @@ package lesson9.Task1;
 import java.util.Arrays;
 
 public class Reader {
-   private String FIO;
+    public String FIO;
     private String nomerChitatelskogo;
     private String Facultet;
     private String dateOfBirth;
@@ -17,16 +17,31 @@ public class Reader {
         this.telephoneNumber = telephoneNumber;
     }
 
-    public void takeBook (String str1){
-        System.out.println(str1);
-    }
-    void takeBook(int n){
+    public void takeBook(int n){
         System.out.println(FIO + " взял "+n+" книги.");
+        System.out.println("");
     }
     void takeBook (String[] arr){
         System.out.println(FIO+ " взял книги: "+Arrays.toString(arr));
+        System.out.println("");
     }
-    public void returnBook(String str2){
-        System.out.println(str2);
+
+    void returnBook(int n){
+        System.out.println(FIO + " вернул "+n+" книги.");
+        System.out.println("");
     }
+    void returnBook (String[] arr){
+        System.out.println(FIO+ " вернул книги: "+Arrays.toString(arr));
+        System.out.println("");
+    }
+
+    public void getInfo(){
+        System.out.println("ФИО: "+FIO);
+        System.out.println("Номер читательского билета: "+nomerChitatelskogo);
+        System.out.println("Факультет: "+Facultet);
+        System.out.println("Дата рождения: "+dateOfBirth);
+        System.out.println("Номер телефона: "+telephoneNumber);
+        System.out.println("");
+    }
+
 }
