@@ -1,9 +1,5 @@
 package lesson9.Task1;
 
-import javax.imageio.stream.FileImageOutputStream;
-import java.util.Arrays;
-import java.util.SortedMap;
-
 public class Book {
     private String NameOfBook;
     private String Author;
@@ -37,6 +33,13 @@ public class Book {
     void returnBook(){
         System.out.println(FIO+ " вернул книги: "+ NameOfBook+" "+"автора "+Author);
         System.out.println("");
+    }
+
+    public void getInfo (){
+        System.out.println("Name of Book: "+NameOfBook);
+        System.out.println("Author of Book: "+Author);
+        System.out.println("");
+
     }
 
 
